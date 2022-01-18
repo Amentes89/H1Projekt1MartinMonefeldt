@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace H1Projekt1MartinMonefeldt.Codes
 {
+    enum People
+    {
+        Teacher,
+        Student,
+        OfficeWorker
+    }
     internal class Person
     {
         private string? _firstName;
@@ -26,9 +32,9 @@ namespace H1Projekt1MartinMonefeldt.Codes
             _firstName = firstName;
             _lastName = lastName;
 
+            int age = (new AgeConverter(birthDate)).Age;
 
             TimeSpan ts = DateTime.Now - birthDate;
-            int age = DateTime.Now.Year - birthDate.Year;
             string birthDateInDanishFormat = birthDate.ToString("dd-MM-yyyy");
             double timeSpanInTotalDays = ts.TotalDays;
             Model = new PersonModel()
@@ -48,7 +54,6 @@ namespace H1Projekt1MartinMonefeldt.Codes
         public Person(PersonModel model)
         {
             Model = model;
-        
         }
         public string? GetFullName()
         {
