@@ -9,7 +9,7 @@ namespace H1Projekt1MartinMonefeldt.Codes
 {
     internal class Person
     {
-        // Niels
+      
         private string? _firstName;
 
         private string? _lastName;
