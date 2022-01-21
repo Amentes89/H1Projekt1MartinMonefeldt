@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace H1Projekt1MartinMonefeldt.Codes;
-{
+
     internal class MyArray
     {
         public string[,,] Cources_MultiDimensional { get; set; }
@@ -67,4 +67,3 @@ namespace H1Projekt1MartinMonefeldt.Codes;
             return returnText;
         }
     }
-}

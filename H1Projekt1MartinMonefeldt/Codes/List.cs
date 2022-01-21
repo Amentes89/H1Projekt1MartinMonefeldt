@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace H1Projekt1MartinMonefeldt.Codes;
-{
+
     internal class MyGenericList
     {
         public List<List<List<string>>> AllHovedforløbCources { get; set; }
@@ -59,4 +59,3 @@ namespace H1Projekt1MartinMonefeldt.Codes;
             return returnText;
         }
     }
-}
